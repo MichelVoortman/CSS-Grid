@@ -1,0 +1,115 @@
+body{
+    background-color: darkgray;
+}
+@media only screen and (min-width: 320px) {
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 8fr 4fr 1fr;
+        background-color: white;
+    }
+        .header{
+        background-color: lightblue;
+        margin-bottom: 5px;
+    }
+
+    .main{
+       background-color: lightgreen;
+       margin-bottom: 5px;
+       }
+
+    .widget{
+        background-color: purple;
+        margin-bottom: 5px;
+    }
+
+    .footer{
+        background-color: darkblue;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: 9fr 4fr 1fr;
+        background-color: white;
+        row-gap: 2.5px;
+        column-gap: 5px;
+    }
+
+    .header{
+               background-color: lightblue;
+               grid-column-start: 1;
+               grid-column-end: 2;
+               grid-row-start: 1;
+               grid-row-end: 4;
+        }
+    
+        .main{
+                background-color: lightgreen;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+        }
+    
+        .widget{
+                background-color: purple;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+        }
+    
+        .footer{
+                background-color: darkblue;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 3;
+                grid-row-end: 4;
+        }
+}
+
+@media only screen and (min-width: 1600px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 5fr 2fr;
+        grid-template-rows: 13fr 1fr;
+        background-color: white;
+        row-gap: 2.5px;
+        column-gap: 5px;
+    }
+    .header{
+                background-color: lightblue;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 3;
+        }
+    
+        .main{
+                background-color: lightgreen;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+        }
+    
+        .widget{
+                background-color: purple;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 3;
+        }
+    
+        .footer{
+                background-color: darkblue;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+        }
+}
